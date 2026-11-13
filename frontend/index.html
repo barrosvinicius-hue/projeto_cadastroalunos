@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <p class="tag">PROJETO INTEGRADO — DWS + POO + BD</p>
+            <h1>Cadastro de Alunos</h1>
+            <p class="subtitulo">Sistema simples de gerenciamento escolar.</p>
+        </header>
+
+        <section class="painel">
+            <h2>Novo aluno</h2>
+            <form id="form-aluno">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" placeholder="Digite o nome" required>
+
+                <label for="email">E-mail</label>
+                <input id="email" type="email" placeholder="Digite o e-mail" required>
+
+                <button type="submit">Cadastrar aluno</button>
+            </form>
+            <p id="mensagem" role="status"></p>
+        </section>
+
+        <section class="painel">
+            <div class="titulo-lista">
+                <h2>Alunos cadastrados</h2>
+                <button class="secundario" id="atualizar" type="button">Atualizar</button>
+            </div>
+            <div id="lista">Carregando alunos...</div>
+        </section>
+    </main>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
