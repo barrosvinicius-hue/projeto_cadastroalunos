@@ -3,13 +3,13 @@ from flask import Flask, request, jsonify, send_from_directory
 from banco import criar_banco
 from aluno_dao import AlunoDAO
 from aluno import Aluno
-from flask import Flask
+from flask import Flask 
 
 
 BASE_DIR = Path(__file__).resolve().parent
 FRONTEND_DIR = BASE_DIR.parent / "frontend"
 
-app = Flask(
+app = Flask( 
     __name__,
     static_folder=str(FRONTEND_DIR),
     static_url_path="/static"
